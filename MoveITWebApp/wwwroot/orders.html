@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Orders</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="lib/twitter-bootstrap/js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <!--Navbar Section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/index.html" id="navbar__logo">MoveIT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu" id="navbar-menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/rules.html" class="navbar__links" id="businessrules-page">Business Rules</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/inquery.html" class="navbar__links" id="inquery-page">Make Inquery</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/orders.html" class="navbar__links" id="myorders-page">My Orders</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/register.html" class="navbar__links" id="registerlogin-page">Register & Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Orders Section-->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>OrderId</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <!-- Modal -->
+    <div id="orderModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Order Details</h4>
+                </div>
+                <div class="modal-body"></div>
+                    <div id="orderId"></div>
+                    <div id="from"></div>
+                    <div id="to"></div>
+                    <div id="distance"></div>
+                    <div id="livingArea"></div>
+                    <div id="atticArea"></div>
+                    <div id="basement"></div>
+                    <div id="piano"></div>
+                    <div id="status"></div>
+                    <div id="firstName"></div>
+                    <div id="lastName"></div>
+                    <div id="email"></div>
+                    <div id="phone"></div>
+                <div class="modal-footer"></div>
+            </div>
+
+        </div>
+    </div>
+    <!--Section Footer-->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Company</h2>
+                    <a href="/sign__up">How it works</a> <a href="/">About Us</a>
+                    <a href="/">Careers</a> <a href="/">Partnerships</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Get Help</h2>
+                    <a href="/">FAQ</a> <a href="/">Help Centar</a>
+                    <a href="/">Privacy Policy</a> <a href="/">Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Offices</h2>
+                    <a href="/">North Macedonia</a> <a href="/">Germany</a>
+                    <a href="/">India</a> <a href="/">France</a>
+                </div>
+            </div>
+        </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">MoveIT</a>
+                </div>
+                <p class="website__rights">© MoveIT 2021. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="https://www.facebook.com/valtech/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/valtech_nl/?hl=en" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/valtech/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/valtech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script>$(document).ready(function () { getOrders(); getUsername();});</script>
+</body>
+</html>
