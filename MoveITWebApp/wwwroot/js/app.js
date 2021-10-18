@@ -71,7 +71,7 @@ function register(event) {
         .then((response) => response.json())
         .then(() => {
 
-            alert("Successfuly registered! Please Login");
+            swal("Successfuly registered! Please Login");
             location.reload();
 
         })
@@ -162,7 +162,7 @@ function postOrder(event) {
             $('.modal-footer').append('<button type="button" class="btn btn-default" onclick="rejectOrder(' + result.orderId + ')">Reject</button>');
             $('.modal-footer').append('<button type="button" class="btn btn-default" onclick="dismissModal()">Close</button>');
             $('#myModal').modal('toggle');
-            alert("You made your order.. The price is " + result.price + "!");           
+            alert("You made your order... The price is " + result.price + "!");           
         })
         .catch((error) => {           
             console.log(error);

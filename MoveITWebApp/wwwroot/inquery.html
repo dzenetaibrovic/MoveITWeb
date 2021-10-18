@@ -41,7 +41,7 @@
     <!--Section Inquery Form-->
     <div class="quote-container">
         <form class="order-form" onsubmit="postOrder(event)">
-            <center><h1 class="main-heading">GET INQUERY</h1></center>
+            <center><h1>GET INQUERY</h1></center>
             <input name="from" type="text" placeholder="From" />
             <input name="to" type="text" placeholder="To" />
             <input name="distance" type="text" placeholder="Distance in km" />
@@ -49,8 +49,8 @@
             <input name="attic" type="text" placeholder="Attic area" />
             <input name="basement" type="text" placeholder="Basement area" />
             <div class="form-element">
-                <input type="checkbox" id="piano">
                 <label for="piano">Piano</label>
+                <input type="checkbox" id="piano">
             </div>
             <button>Get Inquery</button>
         </form>
@@ -58,13 +58,12 @@
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">INQUERY</h4>
                 </div>
-                <div class="modal-body"></div>
+                <div class="modal-body">
                     <div id="orderId"></div>
                     <div id="from"></div>
                     <div id="to"></div>
@@ -72,49 +71,12 @@
                     <div id="livingArea"></div>
                     <div id="atticArea"></div>
                     <div id="basement"></div>
-                    <div id="pianoStatus"></div>                                      
+                    <div id="pianoStatus"></div>
+                </div>
                 <div class="modal-footer"></div>
             </div>
 
         </div>
-    </div>
-    <!--Section Footer-->
-    <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Company</h2>
-                    <a href="/sign__up">How it works</a> <a href="/">About Us</a>
-                    <a href="/">Careers</a> <a href="/">Partnerships</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Get Help</h2>
-                    <a href="/">FAQ</a> <a href="/">Help Centar</a>
-                    <a href="/">Privacy Policy</a> <a href="/">Terms & Conditions</a>
-                </div>
-            </div>
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Offices</h2>
-                    <a href="/">North Macedonia</a> <a href="/">Germany</a>
-                    <a href="/">India</a> <a href="/">France</a>
-                </div>
-            </div>
-        </div>
-        <section class="social__media">
-            <div class="social__media--wrap">
-                <div class="footer__logo">
-                    <a href="/" id="footer__logo">MoveIT</a>
-                </div>
-                <p class="website__rights">© MoveIT 2021. All rights reserved</p>
-                <div class="social__icons">
-                    <a href="https://www.facebook.com/valtech/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/valtech_nl/?hl=en" class="social__icon--link"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/valtech/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/valtech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social__icon--link"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </section>
     </div>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
     <script>$(document).ready(function () { getUsername(); });</script>

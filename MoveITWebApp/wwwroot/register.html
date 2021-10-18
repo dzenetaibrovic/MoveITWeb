@@ -43,67 +43,31 @@
                 <div class="form">
                     <form class="login-form" onsubmit="login(event)">
                         <center><h1 class="main-heading">Login Form</h1></center>
-                        <input name="username" type="text" placeholder="user name" />
-                        <input name="password" type="password" placeholder="password" />
+                        <input name="username" type="text" placeholder="User name" />
+                        <input name="password" type="password" placeholder="Password" />
                         <button>LOGIN</button>
                         <p class="message">Not Registered? <a href="#registerlogin">Register</a></p>
                     </form>
                     <form class="register-form" onsubmit="register(event)">
                         <center><h1 class="main-heading">Register Form</h1></center>
-                        <input name="username" type="text" placeholder="username" />
-                        <input name="email" type="text" placeholder="email-id" />
-                        <input name="password" type="password" placeholder="password" />
-                        <input name="confirmPassword" type="password" placeholder="confirm password" />
-                        <input name="firstName" type="text" placeholder="first name" />
-                        <input name="lastName" type="text" placeholder="last name" />
-                        <input name="phone" type="text" placeholder="phone" />
+                        <input name="username" type="text" placeholder="User name" />
+                        <input name="email" type="text" placeholder="E-mail" />
+                        <input name="password" type="password" placeholder="Password" />
+                        <input name="confirmPassword" type="password" placeholder="Confirm password" />
+                        <input name="firstName" type="text" placeholder="First name" />
+                        <input name="lastName" type="text" placeholder="Last name" />
+                        <input name="phone" type="text" placeholder="Phone" />
                         <button>REGISTER</button>
                         <p class="message">
-                            Already Registered?<a href="#registerlogin">Login</a>
+                            Already Registered? <a href="#registerlogin">Login</a>
                         </p>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <!--Section Footer-->
-    <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Company</h2>
-                    <a href="/sign__up">How it works</a> <a href="/">About Us</a>
-                    <a href="/">Careers</a> <a href="/">Partnerships</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Get Help</h2>
-                    <a href="/">FAQ</a> <a href="/">Help Centar</a>
-                    <a href="/">Privacy Policy</a> <a href="/">Terms & Conditions</a>
-                </div>
-            </div>
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Offices</h2>
-                    <a href="/">North Macedonia</a> <a href="/">Germany</a>
-                    <a href="/">India</a> <a href="/">France</a>
-                </div>
-            </div>
-        </div>
-        <section class="social__media">
-            <div class="social__media--wrap">
-                <div class="footer__logo">
-                    <a href="/" id="footer__logo">MoveIT</a>
-                </div>
-                <p class="website__rights">© MoveIT 2021. All rights reserved</p>
-                <div class="social__icons">
-                    <a href="https://www.facebook.com/valtech/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/valtech_nl/?hl=en" class="social__icon--link"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/valtech/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/valtech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social__icon--link"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </section>
-    </div>
+   
+    
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
     <script>$(document).ready(function () { getUsername(); }); $('.message a').click(function () { $('form').animate({ height: "toggle", opacity: "toggle" }, "slow"); });</script>
 </body>

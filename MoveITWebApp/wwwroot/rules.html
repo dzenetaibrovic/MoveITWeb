@@ -4,9 +4,13 @@
     <meta charset="utf-8" />
     <title>Business Rules</title>
     <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="js/app.js"></script>
 </head>
 <body>
+   
     <!--Navbar Section-->
     <nav class="navbar">
         <div class="navbar__container">
@@ -37,80 +41,100 @@
         </div>
     </nav>
     <!--Section Rules-->
-    <section class="section one">
-        <div class="rules" id="businessrules">
-            <div class="column-left">
-                <h1 class="text">Distance</h1>
-                <p class="text">
-                    The price depends on the distance of the move, where the total distance makes the price calculation
-                    end up in one of the following categories:<br>
-                    1000 SEK + 10 SEK / km for distance above 50 km
-                    <br>
-                    5000 SEK + 8 SEK / km for distance above 50km and below 100km
-                    <br>
-                    10000 SEK + 7 SEK/km for distance above 100km
-                </p>
+    <div class="rules">
+        <div class="section one">
+            <div class="distance" id="businessrules">
+                <div class="distance-right">
+                    <h1>Distance</h1>
+                    <p>
+                        The price depends on the distance of the move,
+                        where the total distance makes the price calculation
+                        end up in one of the following categories:
+                        <br />
+                        <br />
+                        * 1000 SEK + 10 SEK/km for distance above 50km
+                        <br />
+                        * 5000 SEK + 8 SEK/km for distance above 50km and below 50km
+                        <br />
+                        * 10000 SEK + 7 SEK/km for distance above 100km
+                    </p>
+                </div>
+                <div class="distance-left">
+
+                </div>
+
             </div>
         </div>
-    </section>
-    <section class="section two">
-        <div class="rules" id="businessrules">
-            <div class="column-left">
-                <h1 class="text">Volume</h1>
-                <p class="text">Given a volume calculated from the number of square meters of the living are</p>
-            </div>
-            <div class="column-right">
+        <div class="section two">
+            <div class="volume" id="businessrules">
+                <div class="volume-right">
+                    <h1>Volume</h1>
+                    <div class="volume-info">
+                        <p>
+                            Given a volume, calculated from the number of square meters of the living area, one or more cars are needed. For every 50m2 an extra
+                            car is needed, and each car costs the actual distance price calculated according to the table. Basement and attic areas are expected to contain
+                            twice the volume as regular living areas.
+                            <br />
+                            <br />
+                            << Calculation of volume price >>
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Living area</th>
+                                <th>Attic area</th>
+                                <th># of cars</th>
+                                <th>Distance price/car</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>49 m2</td>
+                                <td>0 m2</td>
+                                <td>1</td>
+                                <td>1100 SEK</td>
+                                <td>1100 SEK</td>
+                            </tr>
+                            <tr>
+                                <td>10 m2</td>
+                                <td>25 m2</td>
+                                <td>2</td>
+                                <td>1100 SEK</td>
+                                <td>2200 SEK</td>
+                            </tr>
+                            <tr>
+                                <td>50 m2</td>
+                                <td>0 m2</td>
+                                <td>2</td>
+                                <td>1100 SEK</td>
+                                <td>2200 SEK</td>
+                            </tr>
+                            <tr>
+                                <td>100 m2</td>
+                                <td>0 m2</td>
+                                <td>3</td>
+                                <td>1100 SEK</td>
+                                <td>3300 SEK</td>
+                            </tr>
+                            <tr>
+                                <td>150 m2</td>
+                                <td>0 m2</td>
+                                <td>4</td>
+                                <td>1100 SEK</td>
+                                <td>4400 SEK</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>           
             </div>
         </div>
-    </section>
-    <section class="section three">
-        <div class="rules" id="businessrules">
-            <div class="column-left">
-                <h1 class="text">Piano</h1>
-                <p class="text">The price for moving a piano is an extra</p>
-            </div>
-            <div class="column-right">
+        <div class="section three">
+            <div class="piano" id="businessrules">
+                    <h1>Piano</h1>
+                    <p>Due to extra handling the price for moving a piano is an extra 5000 SEK.<br /> This is regardless of distance
+                    and volume.</p>
             </div>
         </div>
-    </section>
-    <!--Section Footer-->
-    <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Company</h2>
-                    <a href="/sign__up">How it works</a> <a href="/">About Us</a>
-                    <a href="/">Careers</a> <a href="/">Partnerships</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Get Help</h2>
-                    <a href="/">FAQ</a> <a href="/">Help Centar</a>
-                    <a href="/">Privacy Policy</a> <a href="/">Terms & Conditions</a>
-                </div>
-            </div>
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Offices</h2>
-                    <a href="/">North Macedonia</a> <a href="/">Germany</a>
-                    <a href="/">India</a> <a href="/">France</a>
-                </div>
-            </div>
-        </div>
-        <section class="social__media">
-            <div class="social__media--wrap">
-                <div class="footer__logo">
-                    <a href="/" id="footer__logo">MoveIT</a>
-                </div>
-                <p class="website__rights">© MoveIT 2021. All rights reserved</p>
-                <div class="social__icons">
-                    <a href="https://www.facebook.com/valtech/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/valtech_nl/?hl=en" class="social__icon--link"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/valtech/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/valtech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social__icon--link"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </section>
     </div>
+    
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
     <script>$(document).ready(function () { getUsername(); });</script>
 </body>
