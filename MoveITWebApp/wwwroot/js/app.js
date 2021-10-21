@@ -71,7 +71,7 @@ function register(event) {
         .then((response) => response.json())
         .then(() => {
 
-            swal("Successfuly registered! Please Login");
+            alert("Successfuly registered! Please Login");
             location.reload();
 
         })
